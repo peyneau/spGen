@@ -47,52 +47,31 @@ Inputs are specified via an `input.yaml` file in each simulation folder. Below a
 
 ## 📝 Example input.yaml
 
+```yaml
 id: example01
-
 n_reads: 600000
-
 dwell_time: 0.0001
-
 f_transmission: 0.0001
-
 flux_dissolved: 5e8
-
 flux_particles: 10
-
 detector: non-ideal
-
 sir_mean: -0.11045
-
 sir_std: 0.47
-
 size_distribution: lognormal
-
 size_particle_mean: 60.0e-7
-
 size_particle_std: 10.0e-7
-
 shape_distribution: inverse-gaussian
-
 mean: 0.0010
-
 scale: 0.0400
-
 seed: 1
-
 molar_mass: 197.0
-
 isotopic_abundance: 1.0
-
 molar_fraction: 1.0
-
 mass_density: 19.3
-
 timescan_csv: true
-
 timescan_csv_header: true
-
 timescan_csv_start: 0.0
-
+```
 ---
 
 ## 🚀 How to Run the Program
