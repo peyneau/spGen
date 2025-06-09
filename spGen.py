@@ -157,7 +157,7 @@ def inverseGaussianMoments(mu: float, lmbd: float) -> tuple:
     return mu, (mu**3 / lmbd) ** (0.5)
 
 
-def poissonProcess(rate, maxtime):
+def poisson_process(rate, maxtime, seed=np.random.default_rng()):
     """Generate a Poisson process with a given rate and maximum time.
 
     Parameters
@@ -175,7 +175,7 @@ def poissonProcess(rate, maxtime):
     tmax = 0
     if rate > 0:  # otherwise, pptimes remains = []
         while tmax <= maxtime:
-            u = rngp.uniform(0, 1)
+            u = seed.uniform(0, 1)
             # Exponential distribution with parameter <rate>
             dt = -(1.0 / rate) * math.log(1 - u)
             tmax += dt
@@ -238,7 +238,9 @@ def main():
             params.flux_dissolved * params.dwell_time, params.n_reads
         )
         n_ions_detector = rngd.binomial(
-            n_atoms_dissolved_introduced, params.f_transmission, params.n_reads
+            n_atoms_dissolved_introduced,
+            params.f_transmission,
+            params.n_reads,
         )
         timescan_d = n_ions_detector
 
@@ -247,8 +249,10 @@ def main():
         #    | introduced particles
         #    | particle events (nonzero cumulated number of counts)
         timescan_p = np.zeros(params.n_reads)
-        ppjumps = poissonProcess(
-            params.flux_particles * params.dwell_time, params.n_reads
+        ppjumps = poisson_process(
+            params.flux_particles * params.dwell_time,
+            params.n_reads,
+            seed=rngp,
         )
         n_particles = len(ppjumps)
         if params.size_distribution == "dirac":
