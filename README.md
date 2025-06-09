@@ -83,16 +83,12 @@ timescan_csv_start: 0.0
 
   * `numpy`
   * `scipy`
-  * `yaml`
-  * `csv`
-  * `os`
-  * `argparse`
-  * `datetime`
+  * `pyyaml`
 
 Install them with pip if needed. For instance, NumPy can be installed using the following command:
 
 ```bash
-pip install numpy
+pip install numpy scipy pyyaml
 ```
 
 ---
