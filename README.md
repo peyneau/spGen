@@ -85,7 +85,7 @@ timescan_csv_start: 0.0
   * `scipy`
   * `pyyaml`
 
-Install them with pip if needed. For instance, NumPy can be installed using the following command:
+Install them with pip if needed, using the following command:
 
 ```bash
 pip install numpy scipy pyyaml
