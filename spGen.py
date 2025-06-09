@@ -15,8 +15,6 @@ Licence: CC-BY 4.0
 Parameters
 ----------
 
-There are two
-
 The input parameters are read from an input YAML file and include. An example
 YAML file is available in the [README](README.md) file.
 
@@ -34,7 +32,7 @@ flux_dissolved : float
 flux_particles : float
     Number of nanoparticles entering the plasma each second (1/second).
 detector : {'ideal', 'non-ideal'}
-    Type of detector..
+    Type of detector.
 sir_mean : float
     Mean of the logarithm of the detector response.
 sir_std : float
