@@ -52,7 +52,7 @@ id: example01
 n_reads: 600000
 dwell_time: 0.0001
 f_transmission: 0.0001
-flux_dissolved: 5e8
+flux_dissolved: 5.0e+8
 flux_particles: 10
 detector: non-ideal
 sir_mean: -0.11045
