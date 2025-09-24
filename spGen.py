@@ -57,8 +57,8 @@ molar_mass : float
     Molar mass of the monitored isotope (g/mol).
 isotopic_abundance : float
     Natural isotope abundance of the monitored isotope.
-molar_fraction : float
-    Molar fraction of the monitored element in the nanoparticles.
+mass_fraction : float
+    Mass fraction of the monitored element in the nanoparticles.
 mass_density : float
     Mass density of the nanoparticle (g/cm^3).
 timescan_csv : bool
@@ -278,7 +278,7 @@ def main():
             diameters**3
             * (PI / 6)
             * params.mass_density
-            * params.molar_fraction
+            * params.mass_fraction
             * params.isotopic_abundance
             * AVOGADRO
             / params.molar_mass
@@ -444,3 +444,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
