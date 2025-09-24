@@ -37,7 +37,7 @@ Inputs are specified via an `input.yaml` file in each simulation folder. Below a
 | `seed` | RNG seed | `int` | — |
 | `molar_mass` | Molar mass of isotope | `float` | g/mol |
 | `isotopic_abundance` | Isotope abundance | `float` | — |
-| `molar_fraction` | Element molar fraction in NP | `float` | — |
+| `mass_fraction` | Element mass fraction in NP | `float` | — |
 | `mass_density` | NP mass density | `float` | g/cm³ |
 | `timescan_csv` | Save time scan as CSV | `bool` | — |
 | `timescan_csv_header` | Include header in CSV | `bool` | — |
@@ -66,7 +66,7 @@ scale: 0.0400
 seed: 1
 molar_mass: 197.0
 isotopic_abundance: 1.0
-molar_fraction: 1.0
+mass_fraction: 1.0
 mass_density: 19.3
 timescan_csv: true
 timescan_csv_header: true
