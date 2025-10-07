@@ -86,7 +86,7 @@ events+*.csv:
 
 __date__ = "2025-06-05"
 __codename__ = "spGen"
-__version__ = "1-0"
+__version__ = "v-JAAS-2025"
 
 
 import math
@@ -444,4 +444,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
