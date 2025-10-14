@@ -143,4 +143,4 @@ If you use this tool in scientific work, please cite the publication mentioned b
 
 ## Publication
 
-Peyneau, P. E., Seydoux, L., & Tharaud, M. (2025). Synthetic generation of single-channel single particle ICP-MS time scans. Journal of Analytical Atomic Spectrometry.
+Peyneau, P. E., Seydoux, L., & Tharaud, M. (2025). Synthetic generation of single-channel single particle ICP-MS time scans. _Journal of Analytical Atomic Spectrometry_.
