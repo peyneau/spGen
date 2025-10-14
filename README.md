@@ -139,4 +139,8 @@ Each input folder will receive:
 
 ## 🔍 Citation
 
-If you use this tool in scientific work, please cite the author or this repository appropriately.
+If you use this tool in scientific work, please cite the publication mentioned below and this repository.
+
+## Publication
+
+Peyneau, P. E., Seydoux, L., & Tharaud, M. (2025). Synthetic generation of single-channel single particle ICP-MS time scans. Journal of Analytical Atomic Spectrometry.
